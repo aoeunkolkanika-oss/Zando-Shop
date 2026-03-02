@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Zando</title>
+
+    <!-- link bootstrap css -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!-- script js bootstrap -->
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- link cdn icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Bayon&family=Bebas+Neue&family=Bokor&family=Dangrek&family=Fasthand&family=Moul&family=Preahvihear&family=Siemreap&family=Taprom&display=swap" rel="stylesheet">
+
+    <!-- all link file css -->
+    <!-- link header css -->
+    <link rel="stylesheet" href="./style/header.css">
+    <!-- link banner css -->
+     <link rel="stylesheet" href="./style/banner.css">
+
+</head>
+<body>
+    <!-- header -->
+    <header class="container-fluid position-sticky top-0 z-3 bg-light p-0">
+        <nav id="nav-top" class="container navbar px-3 px-lg-0 p-0">
+            <!-- menu -->
+            <ul class="nav d-lg-flex d-none ">
+                <li class="nav-item">
+                    <a href="#WOMEN" class="nav-link text-dark fw-bolder">WOMEN</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#MEN" class="nav-link text-dark fw-bolder">MEN</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link text-dark fw-bolder">BOY</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link text-dark fw-bolder">GRIL</a>
+                </li>
+            </ul>
+            <!-- logo and icon login register -->
+             <div class="navbar gap-5">
+                <!-- logo -->
+                <a href="" class="fs-2 navbar-brand p-0 me-5 fw-bolder ">ZANDO.</a>
+                <div class="navbar gap-3 d-lg-flex d-none">
+                    <!-- search input -->
+                     <input type="text" placeholder="search" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                             class="form-control shadow-none px-3" style="width: 35%;">
+                     <!-- icon -->
+                    <i class="bi bi-heart fs-5" style="cursor: pointer;"></i>  
+                    <i class="bi bi-bag fs-5" style="cursor: pointer;"></i>
+                    <!-- button login and register -->
+                     <button class="btn btn-primary">login</button>
+                     <button class="btn btn-primary">register</button>  
+                </div>
+             </div>
+             <!-- icon sidbar -->
+              <div class="d-flex d-lg-none align-items-center gap-3">
+                <i class="bi bi-search fs-3 d-flex d-lg-none"></i>
+                <i class="bi bi-bag fs-3 d-flex d-lg-none"></i>
+                <i class="bi bi-list fs-1 d-flex d-lg-none " data-bs-toggle="offcanvas" data-bs-target="#sidbar"></i>
+              </div>
+        </nav>
+        <nav id="nav-bottom" class=" d-flex align-items-center 
+            justify-content-center text-danger fw-bold">
+            ចំណាយ​ចាប់ពី 40$ FREE សេវាដឹកជញ្ជូន!
+        </nav>
+
+        <!-- sidbar -->
+        <!-- sidbar or offcanvas -->
+    <div class="offcanvas w-75 d-lg-none offcanvas-start bg-light" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="sidbar" aria-labelledby="offcanvasScrollingLabel">
+
+    <div class="offcanvas-header border-bottom border-1 " style="height: 9vh;">
+        <h2 class="text-dark fw-bolder m-0">ZANDO.</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body  p-0">
+         <ul class="nav gap-3 flex-column">
+                    <li class="nav-item py-3"><a href="#MEN" class="nav-link text-dark fs-5">MEN</a></li>
+                    <li class="nav-item py-3"><a href="#WOMEN" class="nav-link text-dark fs-5">WOMEN</a></li>
+                    <li class="nav-item py-3"><a href="" class="nav-link text-dark fs-5">GRIL</a></li>
+                    <li class="nav-item py-3"><a href="" class="nav-link text-dark fs-5">BOY</a></li>
+                    <li class="nav-item py-3"><a href="" class="nav-link text-dark fs-5">Service</a></li>
+                    <li class="nav-item py-3"><a href="" class="nav-link text-dark fs-5">Content Us</a></li>
+                </ul>
+    </div>
+    </div>
+    <!-- modal search -->
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+<div class="container">
+    <div class="offcanvas-header ps-0 pt-5 pb-3 border-bottom border-dark">
+        <input type="text" class="form-control ps-0 fs-5 shadow-none border-0"
+         placeholder="ស្វែងរកទំនិញ......">
+      <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+</div>
+  </div>
+  </div>
+    </header>
+
+    <!-- main-content -->
+    <main>
+        <!-- banner -->
+         <div class="container-fluid p-0  ">
+            <div id="image-banner" class="container h-100 position-relative p=0">
+                <img src="./assets/image/banner-zando.png" class=" w-100 h-100 object-fit-cover" alt="banner-image">
+                <!-- container-button -->
+                <div id="main-btn-shop" class="position-absolute d-flex w-100 justify-content-center pb-4 pd-md-0" >
+                    <button  id="btn-shop" class="btn border-2 border-light mx-1 py-md-2 px-md-4 text-light">SHOP MEN</button>
+                    <BUtton  id="btn-shop" class="btn border-2 border-light mx-1 py-md-2 px-md-4 text-light">SHOP WOMEN</BUtton>
+                 </div>
+            </div>
+         </div>
+         <!-- logo company -->
+          <div class="container py-2 px-0 d-flex overflow-hidden overflow-scroll ">
+           <img id="logo-company" src="./assets/icon/Zando_Web-1.png" alt="">
+           <img id="logo-company" src="./assets/icon/Ten11_Web-1.png" alt="">
+           <img id="logo-company" src="./assets/icon/TagSpace_Web-1.png" alt="">
+           <img id="logo-company" src="./assets/icon/Sisburma_Web-1.png" alt="">
+           <img id="logo-company" src="./assets/icon/361_Web-1.png" alt="">
+           <img id="logo-company" src="./assets/icon/Routine_Web-1.png" alt="">
+           <img id="logo-company" src="./assets/icon/Sisburma_Web-1.png" alt="">
+           <img id="logo-company" src="./assets/icon/Pomelo_Web-1.png" alt="">
+          </div>
+          <!-- carosel banner  -->
+        <div id="carosel-banner" class="container bg-secondary p-0">
+            <div id="carouselExampleAutoplaying" class="carousel slide h-100" data-bs-ride="carousel">
+                <!-- pic slide -->
+                <div class="carousel-inner h-100">
+                <div class="carousel-item h-100 active">
+                <img src="./assets/icon/sweet.jpg" class="d-block h-100 w-100" alt="...">
+                </div>
+                <div class="carousel-item h-100">
+                <img src="./assets/icon/mey.jpg" class="d-block h-100 w-100" alt="...">
+                </div>
+                <div class="carousel-item h-100">
+                <img src="./assets/icon/tena.jpg" class="d-block h-100 w-100" alt="...">
+                </div>
+                <div class="carousel-item h-100">
+                <img src="./assets/icon/laor-hus.jpg" class="d-block h-100 w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
+
+        <!-- best seller item -->
+        <div class="container p-0 py-5">
+            <!-- title -->
+             <h2 class="fw-bolder">Best Seller items 🔥</h2>
+            <!-- main card -->
+             <div class="container px-0 py-2 overflow-hidden overflow-scroll d-flex">
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/PTAK5573-cr-450x672.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-15%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $11.55 
+                                    <del class="text-dark">US $19.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Regular Polo Shirt</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/TAKK9567-cr-450x672.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-15%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $11.55 
+                                    <del class="text-dark">US $19.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Regular T-Shirts With Printed</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/PTAK4850-cr-450x672.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-15%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $11.55 
+                                    <del class="text-dark">US $15.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Distressed Short Sleeve Shirt</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/PTAK4753-cr-450x672.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-15%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $11.50 
+                                    <del class="text-dark">US $15.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Asymmetrical Top</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/ZANDO140820256597.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-20%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $11.55 
+                                    <del class="text-dark">US $19.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Regular T-Shirts With Printed</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/PTAK4850-cr-450x672.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-15%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $11.55 
+                                    <del class="text-dark">US $15.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Distressed Short Sleeve Shirt</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/STU_1464.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-15%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $10.50 
+                                    <del class="text-dark">US $15.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Short Sleeves T-Shirt</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                   <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/10S25TSSW042_BEIGE (3)-cr-450x672.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-50%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $9.55 
+                                    <del class="text-dark">US $17.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Flared Fitted T-Shirt</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/ZANDO040820252287.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-40%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $8.55 
+                                    <del class="text-dark">US $17.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Midi Skirt</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/SR__1909.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-50%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $6.55 
+                                    <del class="text-dark">US $11.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Double Fitted T-Shirt</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/ZD__9493.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-50%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $8.50 
+                                    <del class="text-dark">US $18.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Cropped Fitted T-Shirts</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+         <!-- MEN PRODUCT-->
+        <div id="MEN" class="container p-0 py-5">
+            <!-- title -->
+             <h2 class="fw-bolder">MEN PRODUCT🔥</h2>
+            <!-- main card -->
+             <div class="container p-0 row m-auto py-3">
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/PTAK5573-cr-450x672.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-15%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $11.55 
+                                    <del class="text-dark">US $19.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Regular Polo Shirt</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/ZANDO140820256597.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-20%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $11.55 
+                                    <del class="text-dark">US $19.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Regular T-Shirts With Printed</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/PTAK4850-cr-450x672.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-15%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $11.55 
+                                    <del class="text-dark">US $15.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Distressed Short Sleeve Shirt</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/STU_1464.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-15%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $10.50 
+                                    <del class="text-dark">US $15.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Short Sleeves T-Shirt</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+        <!-- WOMEN PRODUCT -->
+         <div id="WOMEN" class="container p-0 py-5">
+            <!-- title -->
+             <h2 class="fw-bolder">WOMEN PRODUCT🔥</h2>
+            <!-- main card -->
+             <div class="container p-0 row m-auto py-3">
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/10S25TSSW042_BEIGE (3)-cr-450x672.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-50%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $9.55 
+                                    <del class="text-dark">US $17.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Flared Fitted T-Shirt</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/ZANDO040820252287.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-40%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $8.55 
+                                    <del class="text-dark">US $17.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Midi Skirt</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/SR__1909.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-50%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $6.55 
+                                    <del class="text-dark">US $11.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Double Fitted T-Shirt</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-lg-3 col-md-6 col-12 md-4 " style="height: 550px;">
+                    <div class="card h-100">
+                        <div class="card-header position-relative" style="height: 75%;">
+                            <img src="./assets/image/ZD__9493.jpg" class="w-100 h-100 object-fit-cover img-thumbnail" alt="">
+                            <button class="btn btn-danger py-0 fw-bold position-absolute"
+                             style=" left: 35px; top: 25px;">-50%</button>
+                        </div>
+                        <div class="card-body" style="height: 25%;">
+                            <!-- price and icon -->
+                            <div class="d-flex justify-content-between">
+                                <!-- price -->
+                                <h5 class="text-danger">US $8.50 
+                                    <del class="text-dark">US $18.99</del>
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart"></i>
+                            </div>
+                            <!-- title -->
+                             <h5>Cropped Fitted T-Shirts</h5>
+                             <!-- button -->
+                              <div class="d-flex justify-content-between">
+                                  <button class="btn btn-primary col-7">Add To cart</button>
+                                  <button class="btn btn-success">Buy Now</button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+        <!-- Map and contact -->
+        <div class="container-fluid py-4">
+            <h3 class="text-center mb-5">Contact Us</h3>
+            <!-- main-contain -->
+            <div class="container row m-auto p-0">
+                <!-- map -->
+                <div class="col-12 col-md-6 mb-4 ">
+                    <iframe class="rounded-5 border border-3 border-primary" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.8554671898473!2d104.88799717364718!3d11.562217244211302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951adb4d4041d%3A0x8a90e729f62ad800!2sETEC%20Center!5e0!3m2!1sen!2skh!4v1771993278507!5m2!1sen!2skh" width="100%" height="428" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- form contact -->
+                <div class="col-12 col-md-6 mb-4 ">
+                    <form class=" h-70 rounded-5 p-4 border border-3 border-primary ">
+                        <div class="mb-4">
+                            <input type="text" class="form-control shadow-none fs-5 py-2 " placeholder="Your Name...">
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" class="form-control shadow-none fs-5 py-2 " placeholder="Your email Address...">
+                        </div>
+                        <div class="mb-4">
+                            <textarea rows="4" class="form-control shadow-none fs-5 py-3" placeholder="Your Message..."></textarea>
+                            
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary w-100 btn-lg">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="container-fluid p-0 border-top">
+        <div class="container p-0">
+            <!-- media -->
+            <div class="container row m-auto py-5 p-0">
+                <div class="col-12 col-md-4">
+                    <h3 class="fw-bold pb-3">Zando shop </h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, laborum.</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h3 class="fw-bold pb-3">Get Intouch </h3>
+                    <p class="m-0 pb-1">Address : Etec center & Khu IT Solution</p>
+                    <p class="m-0 pb-1">Email : eteccenter@gmail.com</p>
+                    <p class="m-0 pb-1">Phone : 043154346</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h3 class="fw-bold pb-3">New sleter </h3>
+                    <p class="m-0 pb-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, laborum.</p>
+                    <input id="email-form" type="text" class="form-control shadow-none bg-primary text-light py-3" placeholder="your email address..">
+                </div>
+            </div>
+        </div>
+        <!-- info build -->
+        <h5 class="text-center py-4 m-0 " style="background-color: rgb(241, 238, 238);">&copy; Zando Shop . All    Right Reserved | Build by AOEUN KOLKANIIKA</h5>
+    </footer>
+
+</body>
+</html>

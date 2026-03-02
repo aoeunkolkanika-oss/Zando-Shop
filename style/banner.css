@@ -1,0 +1,47 @@
+#image-banner{
+    height: 90vh !important;
+}
+#main-btn-shop{
+    left: 50%;
+    top: 85%;
+    transform: translate(-50% , -50%);
+}
+#btn-shop{
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 0px 13px white;
+}
+#btn-shop:hover{
+    transform: translateY(-7px);
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 0px 5px rgb(45, 44, 44);
+}
+#logo-company{
+    width: 220px;
+}
+#carosel-banner{
+    height: 350px;
+}
+/* phone */
+@media screen and (max-width:576px) {
+    #image-banner{
+        height: 30vh !important;
+    }
+    #logo-company{
+        width: 100px;
+    }
+    #carosel-banner{
+        height: 120px;
+    }
+}
+/* tablet */
+@media screen and (min-width:577px) and (max-width:992px){
+    #image-banner{
+        height: 40vh !important;
+    }
+    #logo-company{
+        width: 150px;
+    }
+    #carosel-banner{
+        height: 220px;
+    }
+}

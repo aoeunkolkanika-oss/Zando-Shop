@@ -1,0 +1,49 @@
+body{
+    font-family: "Siemreap", sans-serif;
+}
+header{
+    height: 15vh;
+    box-shadow: 5px 0px 3px black;
+}
+header > #nav-top{
+    height: 60%;
+}
+header > #nav-bottom{
+    height: 40%;
+    background-color: rgb(225, 240, 240);
+}
+.nav > .nav-item{
+    cursor: pointer;
+    padding: 5px 4px;
+}
+.nav > .nav-item:hover{
+    background-color: rgba(113, 111, 111, 0.372);
+    padding-left: 15px;
+    transition: all .3s ease-in-out;
+}
+/* tablet */
+ @media screen and (min-width:577px) and (max-width:992px) {
+    .offcanvas{
+        width: 50% !important;
+    }
+    
+}
+/* phone */
+/* @media screen and (max-width:576px;) {
+    .offcanvas{
+        width: 100% !important;
+        height: 23%;
+    }
+
+    
+}
+/* labtop up */
+/* @media screen and (max-width:993px;) {
+    .offcanvas-top{
+        width: 100% !important;
+        height: 25% !important;
+    }
+    
+} */ 
+
+
