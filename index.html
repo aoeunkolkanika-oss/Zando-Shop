@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <!-- script js bootstrap -->
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <!-- link cdn icon bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
@@ -55,10 +56,65 @@
                     <i class="bi bi-heart fs-5" style="cursor: pointer;"></i>  
                     <i class="bi bi-bag fs-5" style="cursor: pointer;"></i>
                     <!-- button login and register -->
-                     <button class="btn btn-primary">login</button>
-                     <button class="btn btn-primary">register</button>  
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">login</button>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">register</button>  
+                            <!-- LOGIN MODAL -->
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="loginEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+            </div>
+
+                    <!-- REGISTER MODAL -->
+                 <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+                             <div class="modal-dialog modal-dialog-centered">
+                    <div  class="modal-content">
+                         <div class="modal-header">
+                           <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                         </div>
+                         <div class="modal-body">
+                           <form>
+                             <div class="mb-3">
+                               <label for="regUsername" class="form-label">Username</label>
+                               <input type="text" class="form-control" id="regUsername" required>
+                             </div>
+                             <div class="mb-3">
+                               <label for="regEmail" class="form-label">Email address</label>
+                               <input type="email" class="form-control" id="regEmail" required>
+                             </div>
+                             <div class="mb-3">
+                               <label for="regPassword" class="form-label">Password</label>
+                               <input type="password" class="form-control" id="regPassword" required>
+                             </div>
+                             <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                           </form>
+                         </div>
+                            </div>
+                    </div>
+                    </div>
                 </div>
              </div>
+             <div class="modal fade" id="loginModal">...</div>
+            <div class="modal fade" id="registerModal">...</div>
              <!-- icon sidbar -->
               <div class="d-flex d-lg-none align-items-center gap-3">
                 <i class="bi bi-search fs-3 d-flex d-lg-none"></i>
@@ -81,8 +137,8 @@
     </div>
     <div class="offcanvas-body  p-0">
          <ul class="nav gap-3 flex-column">
-                    <li class="nav-item py-3"><a href="#MEN" class="nav-link text-dark fs-5">MEN</a></li>
-                    <li class="nav-item py-3"><a href="#WOMEN" class="nav-link text-dark fs-5">WOMEN</a></li>
+                    <li class="nav-item py-3"><a href="" class="nav-link text-dark fs-5">MEN</a></li>
+                    <li class="nav-item py-3"><a href="" class="nav-link text-dark fs-5">WOMEN</a></li>
                     <li class="nav-item py-3"><a href="" class="nav-link text-dark fs-5">GRIL</a></li>
                     <li class="nav-item py-3"><a href="" class="nav-link text-dark fs-5">BOY</a></li>
                     <li class="nav-item py-3"><a href="" class="nav-link text-dark fs-5">Service</a></li>
@@ -722,7 +778,7 @@
             <div class="container row m-auto p-0">
                 <!-- map -->
                 <div class="col-12 col-md-6 mb-4 ">
-                    <iframe class="rounded-5 border border-3 border-primary" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.8554671898473!2d104.88799717364718!3d11.562217244211302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951adb4d4041d%3A0x8a90e729f62ad800!2sETEC%20Center!5e0!3m2!1sen!2skh!4v1771993278507!5m2!1sen!2skh" width="100%" height="428" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="rounded-5 border border-3 border-primary" src="https://maps.app.goo.gl/5btDcuoqdkPkaPDa9" width="100%" height="428" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <!-- form contact -->
                 <div class="col-12 col-md-6 mb-4 ">
@@ -753,17 +809,17 @@
             <div class="container row m-auto py-5 p-0">
                 <div class="col-12 col-md-4">
                     <h3 class="fw-bold pb-3">Zando shop </h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, laborum.</p>
+                    <p>Zando is a Cambodian fashion retail company inspiring your passion of styles and making you experience the world of iconic fashion brands.</p>
                 </div>
                 <div class="col-12 col-md-4">
                     <h3 class="fw-bold pb-3">Get Intouch </h3>
-                    <p class="m-0 pb-1">Address : Etec center & Khu IT Solution</p>
-                    <p class="m-0 pb-1">Email : eteccenter@gmail.com</p>
-                    <p class="m-0 pb-1">Phone : 043154346</p>
+                    <p class="m-0 pb-1">Address : Aoeun KOLKANIIKA</p>
+                    <p class="m-0 pb-1">Email : aoeunkolkanika@gmail.com</p>
+                    <p class="m-0 pb-1">Phone : 0888385773</p>
                 </div>
                 <div class="col-12 col-md-4">
                     <h3 class="fw-bold pb-3">New sleter </h3>
-                    <p class="m-0 pb-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, laborum.</p>
+                    <p class="m-0 pb-1">A newsletter is a regular report or update sent by a group, business, or person to a list of subscribers. It shares news, event dates, or specific tips about a topic. Most are sent by email today, but some are still printed on paper. </p>
                     <input id="email-form" type="text" class="form-control shadow-none bg-primary text-light py-3" placeholder="your email address..">
                 </div>
             </div>
